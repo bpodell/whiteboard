@@ -26,12 +26,12 @@ describe('#secondHighest', function() {
       expect(secondHigest([1,2,3,4])).toEqual({highest: 4, second: 3})
     })
     it('should return null if not an array', function() {
-        expect(secondHigest(5)).toEqual({highest: 4, second: 3})
+        expect(secondHigest(5)).toEqual(null)
     })
     it('should return null if the array is not at least two indicies', function() {
-        expect(secondHigest([1])).toEqual({highest: 4, second: 3})
+        expect(secondHigest([1])).toEqual(null)
     })
     it('should return null if the array is not numeric', function() {
-        expect(secondHigest([1,2,3,4,'string'])).toEqual({highest: 4, second: 3})
+        expect(secondHigest([1,2,3,4,'string'])).toEqual(null)
     })
 })
