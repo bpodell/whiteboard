@@ -4,7 +4,7 @@ const intersect = module.exports = {};
 
 intersect.run = function(a,b) {
   if(!Array.isArray(a) || !Array.isArray(b)) {
-    return 'please input an array';
+    return 'please input two arrays';
   }
   console.log('running');
   let x = a.filter(i => b.includes(i));

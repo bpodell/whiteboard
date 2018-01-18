@@ -12,6 +12,6 @@ describe('#Intersect', function() {
   });
   it('will return a string if both parameters are not arrays', () => {
     let x = intersect.run('string', [1]);
-    expect(x).toEqual('please input an array');
+    expect(x).toEqual('please input two arrays');
   });
 });
