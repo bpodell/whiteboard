@@ -12,15 +12,11 @@ link.count = function(node) {
     err = true;
   }
   while(node.next) {
-    // console.log(node.value);
-    // console.log(node.next);
     if (node.value === null) { err = true; }
     counter ++;
     node = node.next;
   }
-  //   console.log(counter);
   let halfway = counter/2;
-  console.log('halfway',halfway);
   if (err === true) {
     return 'err';
   } 
@@ -29,7 +25,6 @@ link.count = function(node) {
       clone = clone.next;
     }
     object.value = final;
-    console.log(clone);
     return clone;
   }
   if (counter % 2 !== 0) {
@@ -37,7 +32,6 @@ link.count = function(node) {
       clone = clone.next;
     }
     object.value = final;
-    console.log(clone);
     return clone;
   }
 };
