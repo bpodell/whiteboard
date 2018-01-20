@@ -7,22 +7,30 @@ link.count = function(node) {
   let final;
   let object = {};
   let clone = node;
-//   object.next = next;
+  let err = false;
+  if (typeof(node) !== 'object') {
+    err = true;
+  }
   while(node.next) {
     // console.log(node.value);
     // console.log(node.next);
+    if (node.value === null) { err = true; }
     counter ++;
     node = node.next;
   }
-//   console.log(counter);
+  //   console.log(counter);
   let halfway = counter/2;
+  console.log('halfway',halfway);
+  if (err === true) {
+    return 'err';
+  } 
   if (counter % 2 === 0) {
-    for(let i = 1; i < halfway; i++) {
-      node = node.next;
+    for(let i = 1; i < halfway + 1; i++) {
+      clone = clone.next;
     }
     object.value = final;
-    console.log(node);
-    return node;
+    console.log(clone);
+    return clone;
   }
   if (counter % 2 !== 0) {
     for(let i = 1; i < Math.ceil(halfway); i++) {
