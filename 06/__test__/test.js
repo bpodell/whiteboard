@@ -4,7 +4,7 @@ const loop = require('../lib/solution.js');
 require('jest');
 
 
-describe('#Floor', function() {
+describe('#Loop', function() {
   it('should run the callback as many times as the value of count', function() {
     let result = 0;
     function test(){
