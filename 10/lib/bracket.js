@@ -5,9 +5,10 @@ const Stack = require('./stack.js');
 
 // console.log(test);
 
-function bracket(str) {
+module.exports = function(str) {
   let test = new Stack;
   let arr = [];
+  if(typeof str !== 'string') throw new Error('please input a string');
   for(let i = 0; i < str.length; i++) {
     if(str[i] === '{' || str[i] === '}') {
       arr.push(str[i]);
@@ -21,7 +22,8 @@ function bracket(str) {
       test.pop();
     }
   });
-  if(test.top.val) {
+  console.log(test);
+  if(test.top) {
     throw new Error('unfinished bracket');
   }
   console.log(true);
@@ -29,5 +31,5 @@ function bracket(str) {
 }
 
 
-let str = '{}}';
-bracket(str);
+// let str = '{}}';
+// bracket(str);
