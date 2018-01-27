@@ -3,7 +3,7 @@
 const Stack = require('./stack.js');
 
 
-// console.log(test);
+
 
 module.exports = function(str) {
   let test = new Stack;
@@ -22,13 +22,11 @@ module.exports = function(str) {
       test.pop();
     }
   });
-  console.log(test);
   if(test.top) {
     throw new Error('unfinished bracket');
   }
-  console.log(true);
   return true;
-}
+};
 
 
 // let str = '{}}';
