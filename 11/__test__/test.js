@@ -10,6 +10,9 @@ describe('MISSING', () => {
   arr.splice(99, 1);
   it('should return the number that is removed from the 1-100 array' , () => {
     expect(missing(arr)).toEqual(100);
+    arr.push(100);
+    arr.splice(1,1);
+    expect(missing(arr)).toEqual(2);
   });
   it('should throw an error if the input is not an array', () => {
     expect(() => missing(123)).toThrow();
