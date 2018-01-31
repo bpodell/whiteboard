@@ -9,7 +9,6 @@ describe('queue data structure module', function() {
     q.enqueue(1);
     q.enqueue(2);
     q.enqueue(3);
-    console.log(q);
     expect(q.stack1.size).toEqual(3);
     expect(q.stack2.size).toEqual(0);
   });
