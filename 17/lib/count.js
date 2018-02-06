@@ -1,6 +1,5 @@
 'use strict';
 
-const kary = require('./kary-tree');
 
 
 module.exports = function(tree) {
