@@ -1,1 +1,1 @@
-Write a function which will return the max child count of a node within a k-ary tree
+Write a function which when given a k-ary tree will return a sorted linked list.
