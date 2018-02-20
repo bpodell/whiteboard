@@ -10,7 +10,6 @@ module.exports = function(arr) {
     result.push([]);
   });
   let rev = arr.reverse();
-  console.log(arr);
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j< arr[0].length; j++)
       result[j].push(rev[i][j]);
