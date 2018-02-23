@@ -1,4 +1,7 @@
-const sortAnagrams = str => {
+'use strict';
+
+module.exports = function (str) {
+  if (typeof str !== 'string' || str.length < 1) throw new Error('string please');
   let result = {};
   var indicies = [];
   let solution = [];
@@ -17,5 +20,3 @@ const sortAnagrams = str => {
   }
   return solution;
 };
-let testString = 'dog cat tca act god ogd odg';
-sortAnagrams(testString);
