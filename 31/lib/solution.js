@@ -10,6 +10,5 @@ module.exports = function(arr1, arr2) {
   arr2.forEach(e => {
     if (hash1[e]) hash2[e] = e;
   });
-  console.log(Object.values(hash2));
   return Object.values(hash2);
 };
