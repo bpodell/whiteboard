@@ -10,3 +10,5 @@ Write at least four tests for each function (they will generally cover the same 
 your tests should cover basic (expected) functionality
 your tests should consider edge cases for your function (ex: will your function still operate on an array of floating point integers?)
 In your README.md explain why you would NOT use recursion to solve fibonacci, even though you CAN.
+
+The reason you wouldn't use recursion on this is due to the call stack size limit. A fibonacci sequence in theory is limitless so if you wanted to build a really long sequence you would be adding a ton of function calls to the stack. You would be at risk of overfilling the stack because things won't be removed from the stack until the final iteration of the function has been called. 
