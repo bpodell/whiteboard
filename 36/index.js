@@ -8,15 +8,9 @@ let treeTwo = new BST;
 treeOne.insert(new TreeNode(10));
 treeOne.insert(new TreeNode(11));
 treeOne.insert(new TreeNode(7));
-// treeOne.insert(new TreeNode(10));
-// treeOne.insert(new TreeNode(10));
-// treeOne.insert(new TreeNode(10));
 
 treeTwo.insert(new TreeNode(10));
 treeTwo.insert(new TreeNode(1));
 treeTwo.insert(new TreeNode(9));
-// treeTwo.insert(new TreeNode(10));
-// treeTwo.insert(new TreeNode(10));
-// treeTwo.insert(new TreeNode(10));
 
 compare(treeOne, treeTwo);
